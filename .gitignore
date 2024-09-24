@@ -1,2 +1,13 @@
 node_modules
 .vscode/
+.idea/
+*.log
+*.iml
+*.class
+*.zip
+
+.DS_Store
+img/.DS_Store
+src/.DS_Store
+vendor/.DS_Store
+img/
