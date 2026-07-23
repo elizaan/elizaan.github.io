@@ -6,6 +6,10 @@
   color: $primary !important;
 }
 
+.bg-dark {
+  background-color: $navy !important;
+}
+
 a {
   color: $primary;
   &:hover,

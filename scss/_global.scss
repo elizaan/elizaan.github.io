@@ -1,9 +1,17 @@
 // Global styling for this template
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   @include body-font;
   padding-top: 54px;
-  color: $gray-600;
+  color: $gray-700;
+  background-color: $white;
+  font-size: 1rem;
+  line-height: 1.7;
+  overflow-x: hidden;
 }
 @media (min-width: 992px) {
   body {
@@ -19,44 +27,190 @@ h4,
 h5,
 h6 {
   @include heading-font;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: $gray-800;
+  font-weight: 600;
+  color: $navy;
+  line-height: 1.25;
 }
 
 h1 {
-  font-size: 6rem;
-  line-height: 5.5rem;
+  font-size: 2.85rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: $navy;
+  display: inline-block;
+  padding-bottom: 0.6rem;
+  border-bottom: 3px solid $teal;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
 .subheading {
-  text-transform: uppercase;
+  text-transform: none;
   font-weight: 500;
-  @include heading-font;
-  font-size: 1.35rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.05rem;
+  color: $teal-dark;
+  letter-spacing: 0;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: $teal;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.justify {
+  text-align: left;
+}
+
+a {
+  color: $teal-dark;
+  text-decoration-color: fade-out($teal-dark, 0.55);
+  text-underline-offset: 2px;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $teal;
+  }
 }
 
 .list-social-icons {
   a {
     color: $gray-700;
     &:hover {
-      color: $primary;
+      color: $teal;
     }
     .fa-lg {
-      font-size: 1.75rem;
+      font-size: 1.6rem;
     }
+    .fa-stack-2x {
+      color: $gray-100;
+      border: 1px solid $gray-300;
+      border-radius: 50%;
+    }
+  }
+  li:hover .fa-stack-2x {
+    border-color: $teal;
   }
 }
 
 .list-icons {
-  font-size: 3rem;
+  font-size: 2.5rem;
   .list-inline-item i {
+    color: $gray-500;
     &:hover {
-      color: $primary;
+      color: $teal;
     }
   }
+}
+
+// Research interest / skill pills
+.pill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.pill {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  background-color: $cream;
+  border: 1px solid $gray-300;
+  color: $navy-light;
+  font-size: 0.9rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.pill-accent {
+  background-color: fade-out($teal, 0.9);
+  border-color: fade-out($teal, 0.65);
+  color: $teal-dark;
+}
+
+// Publication / project cards
+.pub-card {
+  border-left: 3px solid $gray-300;
+  padding: 0.25rem 0 0.25rem 1.5rem;
+  margin-bottom: 2.25rem;
+  transition: border-color 0.15s ease-in-out;
+  &:hover {
+    border-left-color: $teal;
+  }
+}
+
+.pub-venue {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: $teal-dark;
+  background-color: fade-out($teal, 0.92);
+  padding: 0.2rem 0.65rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.pub-authors {
+  color: $gray-600;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.pub-authors .me {
+  color: $navy;
+  font-weight: 600;
+}
+
+.contribution-label {
+  color: $navy;
+  font-weight: 600;
+}
+
+// Section eyebrow / intro text
+.section-intro {
+  color: $gray-600;
+  max-width: 46rem;
+}
+
+// Beyond-research condensed strip
+.beyond-research-strip {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+.beyond-research-strip img {
+  height: 7.5rem;
+  width: 7.5rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+}
+
+hr.divider {
+  border: none;
+  border-top: 1px solid $gray-300;
+  margin: 2rem 0;
 }

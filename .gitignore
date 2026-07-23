@@ -6,8 +6,10 @@ node_modules
 *.class
 *.zip
 
+# macOS
 .DS_Store
-img/.DS_Store
-src/.DS_Store
-vendor/.DS_Store
-img/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example

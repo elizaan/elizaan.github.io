@@ -1,28 +1,31 @@
 section.resume-section {
-  border-bottom: 1px solid $gray-300;
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
+  border-bottom: 1px solid $gray-200;
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
   .resume-item {
     .resume-content {}
     .resume-date {
       min-width: none;
+      color: $gray-500;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.92rem;
+      font-weight: 500;
     }
   }
 }
 @media (min-width: 768px) {
   section.resume-section {
-    min-height: 100vh;
     .resume-item {
       .resume-content {}
       .resume-date {
-        min-width: 18rem;
+        min-width: 16rem;
       }
     }
   }
 }
 @media (min-width: 992px) {
   section.resume-section {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
+    padding-top: 3.5rem !important;
+    padding-bottom: 3.5rem !important;
   }
 }

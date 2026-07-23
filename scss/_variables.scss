@@ -3,37 +3,45 @@
 // Restate Bootstrap Variables
 
 $white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #868e96 !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
+$gray-100: #f7f8f9 !default;
+$gray-200: #edf0f2 !default;
+$gray-300: #dde2e6 !default;
+$gray-400: #c1c9d1 !default;
+$gray-500: #97a1ac !default;
+$gray-600: #6c7885 !default;
+$gray-700: #4a5561 !default;
+$gray-800: #2c363f !default;
+$gray-900: #1b2229 !default;
 $black:    #000 !default;
 
-$blue:    #007bff !default;
-$indigo:  #6610f2 !default;
+// Core palette: a quiet, editorial academic look.
+// Navy for headings/nav, a single muted teal accent used sparingly.
+$navy:       #1b2733 !default;
+$navy-light: #26333f !default;
+$teal:       #3c6e71 !default;
+$teal-dark:  #2b5254 !default;
+$cream:      #faf9f6 !default;
+
+$blue:    #375f7a !default;
+$indigo:  #574f7d !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
-$red:     #dc3545 !default;
-$orange:  #BD5D38 !default;
-$yellow:  #ffc107 !default;
-$green:   #28a745 !default;
-$teal:    #20c997 !default;
-$cyan:    #17a2b8 !default;
+$red:     #b3413d !default;
+$orange:  #c07f3f !default;
+$yellow:  #c98a2c !default;
+$green:   #2f7d5f !default;
+$teal-b:  #20c997 !default;
+$cyan:    #3c6e71 !default;
 
-$primary:       $orange !default;
+$primary:       $teal !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
-$info:          $cyan !default;
+$info:          $teal !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
-$dark:          $gray-800 !default;
+$dark:          $navy !default;
 
 // Page Variables
 
-$sidebar-base-width: 17rem;
+$sidebar-base-width: 18rem;
