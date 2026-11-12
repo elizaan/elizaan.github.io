@@ -137,29 +137,9 @@ section[id] {
 .header-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   min-height: 84px;
   gap: 24px;
-}
-.wordmark {
-  font-family: var(--serif);
-  font-size: 28px;
-  letter-spacing: -1px;
-  display: flex;
-  gap: 9px;
-  align-items: center;
-  text-decoration: none;
-  color: var(--ink);
-  font-weight: 500;
-}
-.wordmark svg {
-  width: 29px;
-  height: 29px;
-  color: var(--green);
-}
-.wordmark > span {
-  color: var(--coral);
-  margin-left: -8px;
 }
 .site-header nav {
   display: flex;
@@ -1169,9 +1149,6 @@ details[open] > summary .fa-plus {
   .site-header nav a {
     font-size: 11px;
   }
-  .wordmark {
-    font-size: 25px;
-  }
   .hero {
     padding-top: 55px;
     gap: 35px;
@@ -1315,13 +1292,7 @@ details[open] > summary .fa-plus {
   }
   .header-inner {
     min-height: 68px;
-  }
-  .wordmark {
-    font-size: 25px;
-  }
-  .wordmark svg {
-    width: 24px;
-    height: 24px;
+    justify-content: flex-end;
   }
   .menu-toggle {
     display: flex;

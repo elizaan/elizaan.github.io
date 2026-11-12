@@ -68,11 +68,11 @@
   backgroundGrid.before(backgroundDetails);
   backgroundDetails.append(backgroundSummary, backgroundGrid);
 
-  function revealLinkedContent() {
+  function revealLinkedContent(hash = location.hash) {
     let target;
     try {
       target = document.getElementById(
-        decodeURIComponent(location.hash.slice(1)),
+        decodeURIComponent(hash.slice(1)),
       );
     } catch {
       return;
@@ -85,7 +85,10 @@
     }
   }
   revealLinkedContent();
-  window.addEventListener("hashchange", revealLinkedContent);
+  window.addEventListener("hashchange", () => revealLinkedContent());
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => revealLinkedContent(link.hash));
+  });
 
   const filterList = document.querySelector(".filter-list");
   const filterButtons = [...filterList.querySelectorAll("button")];
