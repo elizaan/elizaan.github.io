@@ -1,0 +1,73 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="680"
+  height="390"
+  viewBox="0 0 680 390"
+  fill="none"
+>
+  <rect width="680" height="390" fill="#f0e9e2" />
+  <defs>
+    <pattern
+      id="cells"
+      width="43"
+      height="34"
+      patternUnits="userSpaceOnUse"
+      patternTransform="rotate(-12)"
+    >
+      <ellipse cx="13" cy="10" rx="9" ry="6" fill="#d4abb8" />
+      <ellipse cx="13" cy="10" rx="3" ry="2" fill="#9e7b98" />
+      <ellipse cx="34" cy="28" rx="11" ry="7" fill="#dec0c6" />
+      <ellipse cx="34" cy="28" rx="3" ry="2" fill="#ad8b9d" />
+    </pattern>
+    <clipPath id="tissue">
+      <path
+        d="M133 72c44-37 96 18 126 6s69-44 96-11 14 44 57 43 99 28 111 64-32 46-38 76-61 27-91 50-70-13-98-8-63 34-94 7-11-60-43-73-56-53-40-83-12-42 14-71Z"
+      />
+    </clipPath>
+  </defs>
+  <rect
+    x="75"
+    y="41"
+    width="531"
+    height="296"
+    rx="8"
+    fill="#fcfbf7"
+    stroke="#cbbfb3"
+    stroke-width="2"
+  />
+  <rect x="88" y="54" width="505" height="270" rx="4" fill="#f8f3f1" />
+  <g clip-path="url(#tissue)">
+    <rect x="100" y="50" width="460" height="270" fill="#e6c7ce" />
+    <rect x="100" y="50" width="460" height="270" fill="url(#cells)" />
+  </g>
+  <path
+    d="m245 109 63-4 38 40-17 56-70 7-37-46 23-53Z"
+    fill="#e9f1dc"
+    fill-opacity=".2"
+    stroke="#4d7a5d"
+    stroke-width="2.5"
+  />
+  <path
+    d="m406 211 46 2 28 40-37 28-54-15 17-55Z"
+    fill="#eac6a6"
+    fill-opacity=".2"
+    stroke="#b16d45"
+    stroke-width="2.5"
+  />
+  <path
+    d="m296 148 19 36 76-3 31 63"
+    stroke="#2e6c5b"
+    stroke-width="2"
+    stroke-dasharray="5 5"
+  />
+  <g fill="#2e6c5b">
+    <circle cx="296" cy="148" r="5" />
+    <circle cx="315" cy="184" r="5" />
+    <circle cx="391" cy="181" r="5" />
+  </g>
+  <circle cx="422" cy="244" r="6" fill="#b16d45" />
+  <path d="M103 308h58" stroke="#6c7b6a" stroke-width="3" />
+  <path d="M103 303v10m58-10v10" stroke="#6c7b6a" stroke-width="1.5" />
+  <circle cx="556" cy="81" r="10" fill="#dbe6d4" />
+  <path d="m551 81 4 4 6-8" stroke="#4c7154" stroke-width="2" />
+</svg>

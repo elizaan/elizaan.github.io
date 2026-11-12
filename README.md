@@ -1,3 +1,9 @@
+# Ishrat Jahan Eliza — Academic website
+
+The refreshed site is plain HTML, CSS, and JavaScript and publishes on GitHub Pages without a build step. See [SITE-GUIDE.md](SITE-GUIDE.md) for previewing, editing, publishing, and visual asset credits. The original theme documentation is retained below for historical reference.
+
+---
+
 # [Start Bootstrap - Resume](https://startbootstrap.com/template-overviews/resume/)
 
 [Resume](https://startbootstrap.com/template-overviews/resume/) is a resume and CV theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features a fixed sidebar with content sections to build a simple, yet elegant resume.
